@@ -1,0 +1,10 @@
+/* TODO
+copy content of landing page and adjust justification and alignment
+Add services page to the router
+create style wiyhin the component
+using fix width to align components
+use media query and styles  for responsivenes
+what is the difference between width and minwidth in css
+
+
+*/
