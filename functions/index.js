@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
     pass: config.user.password,
   },
 });
-let mailOptions = {
+const mailOptions = {
   from: "Arc Development",
   to: "smancpd@gmail.com",
   subject: "Testing nodemailer",
