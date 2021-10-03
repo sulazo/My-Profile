@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 function HeaderPractise(props) {
   const classes = useStyles();
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("md"));
+  const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <>
@@ -39,7 +39,7 @@ function HeaderPractise(props) {
           >
             <img src={logo} alt="company logo" className={classes.logo} />
           </Button>
-          {matches ? <SwipeableTemporaryDrawer /> : <Tabx {...props} />}
+          {matchesMD ? <SwipeableTemporaryDrawer /> : <Tabx {...props} />}
         </Toolbar>
       </AppBar>
       <Toolbar className={classes.toolBarMargin} />

@@ -12,16 +12,16 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 700,
     fontSize: "2.5rem",
     color: "#0B72B9",
-    lineHeight: 1.5
+    lineHeight: 1.5,
   },
   animation: {
     minWidth: "21em",
     maxWidth: "50em",
     [theme.breakpoints.down("sm")]: {
-      maxWidth: "30em"
+      maxWidth: "30em",
     },
     marginTop: "2em",
-    marginLeft: "10%"
+    marginLeft: "10%",
   },
   learnButtonHero: {
     color: "blue",
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     width: 145,
     marginRight: 40,
     borderColor: "blue",
-    borderWidth: 2
+    borderWidth: 2,
   },
   learnButton: {
     marginTop: 10,
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 50,
     //  marginRight: 40,
     borderColor: "blue",
-    borderWidth: 2
+    borderWidth: 2,
   },
   estimateButin: {
     color: "white",
@@ -62,16 +62,16 @@ const useStyles = makeStyles((theme) => ({
     width: 145,
     marginRight: 40,
     backgroundColor: "orange",
-    "&:hover": { backgroundColor: "red" }
+    "&:hover": { backgroundColor: "red" },
   },
   buttonContainer: {
-    marginTop: "1em"
+    marginTop: "1em",
   },
 
   heroTextContainer: {
     minWidth: "25em",
     //maxWidth:"",
-    marginLeft: "1em"
+    marginLeft: "1em",
     // [theme.breakpoints.down("md")]: {
     //   marginLeft: 0
     // }
@@ -79,35 +79,35 @@ const useStyles = makeStyles((theme) => ({
   mainContainer: {
     marginTop: "5em",
     [theme.breakpoints.down("md")]: {
-      marginTop: "2em"
+      marginTop: "2em",
     },
     [theme.breakpoints.down("sm")]: {
-      marginTop: "0"
-    }
+      marginTop: "0",
+    },
   },
   h2: {
     fontFamily: "Raleway",
     fontWeight: 700,
     fontSize: "2.5em",
     color: theme.palette.common.blue,
-    lineHeight: 1.5
+    lineHeight: 1.5,
   },
   h4: {
     fontFamily: "Raleway",
     fontWeight: 700,
     fontSize: "1.75em",
-    color: theme.palette.common.blue
+    color: theme.palette.common.blue,
   },
   subTitle1: {
     fontSize: "1.25rem",
     fontWeight: 300,
     color: "#868686",
-    marginBottom: "1em"
+    marginBottom: "1em",
   },
   specialText: {
     fontFamily: "Pacifico",
-    color: "orange"
-  }
+    color: "orange",
+  },
 }));
 
 const defaultOptions = {
@@ -115,8 +115,8 @@ const defaultOptions = {
   autoplay: false,
   animationData: animationData,
   rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice"
-  }
+    preserveAspectRatio: "xMidYMid slice",
+  },
 };
 
 export default function LandingPage() {

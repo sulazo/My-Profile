@@ -11,3 +11,21 @@ give the main container class.maincontainer -pading l 5em,right 5em,top 2em,bott
 class.heading =maxwidth 4oem ? why not width
  use setselected index on arrowss
 */
+
+import React from "react";
+import { Link } from "react-router-dom";
+
+export default function CustomSoftwarePage() {
+  return (
+    <h1>Hello</h1>
+    // <Grid container>
+    //   <Grid item>
+    //     <h1>CustomSoftwarePage</h1>
+    //     <h1>CustomSoftwarePage</h1>
+    //     <h1>CustomSoftwarePage</h1>
+    //     <h1>CustomSoftwarePage</h1>
+    //     <h1>CustomSoftwarePage</h1>
+    //   </Grid>
+    // </Grid>
+  );
+}

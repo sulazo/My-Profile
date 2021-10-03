@@ -5,9 +5,10 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { ThemeProvider } from "@material-ui/styles";
 import Footer from "./Footer";
-// import LandingPage from "./LandingPage";
+import CustomSoftwarePage from "./CustomSoftwarePage";
 import HomePage from "./HomePage";
 import ContactPage from "./ContactPage";
+import ServicesPage from "./ServicesPage";
 
 export default function App() {
   const [tabIndexValue, setTabIndexValue] = useState(0);
@@ -24,16 +25,17 @@ export default function App() {
           {/* <Header /> */}
           {/* <Header2 /> */}
           <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/service" component={ServicesPage} />
             <Route
               exact
-              path="/"
-              component={HomePage}
-              // component={LandingPage}
-              // component={() => <h1 style={{ height: "500px" }}>Home Page</h1>}
+              path="/custom"
+              render={(props) => <CustomSoftwarePage />}
+              // {
+              //   // () => <h2> CUSTOM</h2>
+              //   ContactPage
+              // }
             />
-            <Route exact path="/service" component={() => <h1> Services</h1>} />
-            {/* <Route exact path="/contact" component={() => {Contact;}}/> */}
-            {/* <Route exact path="/website" component={() => <h2> Website</h2>} /> */}
             <Route exact path="/rpos" component={() => <h2> RPOS</h2>} />
             <Route exact path="/print" component={() => <h2> Print</h2>} />
             <Route
@@ -41,11 +43,7 @@ export default function App() {
               path="/warranty"
               component={() => <h2> Warranty</h2>}
             />
-            {/* <Route
-            exact
-            path="/custom"
-            component={() => <h2> Custom Services</h2>}
-          /> */}
+
             <Route
               exact
               path="/revolution"
@@ -53,8 +51,6 @@ export default function App() {
             />
             <Route exact path="/estimate" component={() => <h1>Estimate</h1>} />
             <Route exact path="/contact" component={ContactPage} />
-
-            {/* <Route exact path="/contact" component={ContactPage} /> */}
           </Switch>
           <Footer
             tabIndexValuep={tabIndexValue}

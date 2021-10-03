@@ -46,7 +46,8 @@ export default function Tabx(props) {
       switch (window.location.pathname) {
         case `${tabsOptions.link}`:
           if (props.tabIndexValue !== tabsOptions.activeIndex) {
-            props.setTabIndexValue(tabOpt.activeIndex);
+            // if the present tab != active tab
+            props.setTabIndexValue(tabOpt.activeTabIndex); //redraw  by setting  active tab as active
             if (
               tabOpt.selectedIndex &&
               tabOpt.selectedIndex !== selectedIndex
